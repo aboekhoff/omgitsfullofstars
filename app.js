@@ -72,5 +72,4 @@ function resizeContainers() {
 }
 
 window.addEventListener('resize', resizeContainers)
-
 resizeContainers()

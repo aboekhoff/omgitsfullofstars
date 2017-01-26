@@ -15,6 +15,22 @@ h1 {
   padding: 8px;
 }
 
+#button-bar {
+  position: fixed;
+  top: 60px;
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  background-color: #000;
+}
+
 .outer-container {
   width: 100%;
 }
@@ -50,12 +66,13 @@ h1 {
 
 .rail {
   padding-top: 16px;
-  transition: width 300ms ease-in-out;
-  z-index: 2;
+  transition: width 200ms ease-in-out;
+  z-index: 3;
   position: fixed;
   top: 60px;
   width: 200px;
   bottom: 0;
+  padding-bottom: 60px;
   overflow: scroll;
 }
 
@@ -94,16 +111,17 @@ h1 {
 }
 
 .rail.over.left, .rail.over.right {
-  z-index: 4;
+  z-index: 5;
 }
 
 .main {
   position: relative;
   z-index: 2;
-  margin-top: 60px;
-  margin-left: 200px;
-  margin-right: 200px;
+  padding-top: 120px;
+  padding-left: 200px;
+  padding-right: 200px;
   padding-bottom: 16px;
+  border: none;
   background-color: #ececec;
 }
 
@@ -115,7 +133,7 @@ h1 {
 
 .footer {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
 }
 
