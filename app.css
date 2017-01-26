@@ -1,0 +1,123 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  font-family: Avenir, Athelas, "Helvetica Neue";
+}
+
+h1 {
+  padding: 8px;
+}
+
+.header, .footer {
+  background-color: #c33;
+  color: #111;
+  height: 60px;
+}
+
+.header {
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+}
+
+.header .label, .footer .label {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  color: #eee;
+  padding-top: 8px;
+}
+
+.rail {
+  padding-top: 16px;
+  transition: width 300ms ease-in-out;
+  z-index: 2;
+  position: fixed;
+  top: 60px;
+  width: 200px;
+  bottom: 0;
+  overflow: scroll;
+}
+
+.rail .label {
+  background-color: #eee;
+  color: #111;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+}
+
+.rail.hidden {
+  width: 0px;
+  overflow: hidden;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.left, .right {
+  background-color: #ccd;
+}
+
+.left.over, .right.over {
+  background-color: #eef;
+}
+
+.rail.over.left, .rail.over.right {
+  z-index: 4;
+}
+
+.main {
+  position: relative;
+  z-index: 2;
+  margin-top: 60px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-bottom: 16px;
+  background-color: #ececec;
+}
+
+.main .text {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #ececec;
+}
+
+.footer {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  background-color: #334;
+  color: #eef;
+  text-align: center;
+  margin: 12px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
