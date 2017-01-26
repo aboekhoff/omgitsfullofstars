@@ -19,9 +19,9 @@ function randomString(min, max) {
 var state = {
   lockCount: 0,
   lock: function() {
-    if (lockCount === 0) {
+    if (this.lockCount === 0) {
       $(document.body).addClass('locked')
-    } 
+    }
     this.lockCount += 1
   },
   unlock: function() {

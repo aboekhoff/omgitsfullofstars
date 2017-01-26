@@ -10,14 +10,15 @@ body {
   position: relative;
   z-index: 1;
   font-family: Avenir, Athelas, "Helvetica Neue";
+  overflow: auto;
 }
 
-body.locked, body.locked:hover {
+.locked, .locked:hover {
   overflow: hidden
 }
 
 body:hover {
-  overflow:scroll;
+  overflow: auto;
 }
 
 h1 {
