@@ -67,11 +67,13 @@ h1 {
 }
 
 .left {
-  left: 0;
+  left: -16px;
+  padding-left: 16px;
 }
 
 .right {
-  right: 0;
+  right: -16px;
+  padding-right: 16px;
 }
 
 .left, .right {
