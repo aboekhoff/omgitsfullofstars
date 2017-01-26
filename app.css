@@ -1,7 +1,3 @@
-::-webkit-scrollbar {
-  width: 0;
-}
-
 html, body {
   width: 100%;
   height: 100%;
@@ -14,6 +10,14 @@ body {
   position: relative;
   z-index: 1;
   font-family: Avenir, Athelas, "Helvetica Neue";
+}
+
+body.locked, body.locked:hover {
+  overflow: hidden
+}
+
+body:hover {
+  overflow:scroll;
 }
 
 h1 {
