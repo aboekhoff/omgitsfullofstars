@@ -58,3 +58,19 @@ for (var i=0, ii=Math.max(n1, n2, n3, n4); i<ii; i++) {
     }
   }
 }
+
+function resizeContainers() {
+  $('.outer-container').each(function(i, e) {
+    var outer = $(e)
+    var inner = $(e).children(':first')
+    console.log({
+      outer: outer[0],
+      inner: inner[0],
+    })
+    outer.css('width', $(inner).outerWidth())
+  })
+}
+
+window.addEventListener('resize', resizeContainers)
+
+resizeContainers()
