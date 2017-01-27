@@ -23,6 +23,8 @@ body {
 
 body:hover {
   overflow: auto;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -30,8 +32,21 @@ h1 {
 }
 
 #button-bar {
+  transition: height 200ms ease-in-out;
   position: fixed;
-  top: 60px;
+  top: 68px;
+  width: 505px;
+  left: 50%;
+  margin-left: -252px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ddd;
+  height: 12px;
+  overflow: hidden;
+}
+
+#button-bar:hover {
+  height: 146px;
 }
 
 #modal-overlay {
@@ -128,15 +143,23 @@ h1 {
   z-index: 5;
 }
 
+p {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .main {
   position: relative;
   z-index: 2;
-  padding-top: 120px;
+  padding-top: 72px;
   padding-left: 200px;
   padding-right: 200px;
   padding-bottom: 16px;
   border: none;
   background-color: #ececec;
+  min-height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .main .text {
@@ -163,4 +186,8 @@ h1 {
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #223;
 }
